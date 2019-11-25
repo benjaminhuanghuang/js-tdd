@@ -1,0 +1,27 @@
+{
+  "name": "js-tdd",
+  "version": "1.0.0",
+  "description": "- https://www.linkedin.com/learning/javascript-test-driven-development-es6/",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha \"src/**/*.test.js\" --recursive --require @babel/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminhuanghuang/js-tdd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjaminhuanghuang/js-tdd/issues"
+  },
+  "homepage": "https://github.com/benjaminhuanghuang/js-tdd#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.4",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
