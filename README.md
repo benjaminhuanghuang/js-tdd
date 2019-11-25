@@ -18,6 +18,10 @@
 ```
   npm install -D mocha chai
   npm install -D @babel/core @babel/preset-env @babel/register
+
+  npm i -D chai-exclude
+
+  npm i -D sinon
 ```
 Create .babelrc
 
@@ -26,3 +30,11 @@ Create .babelrc
 ```
   npx mocha "src/**/*.test.js" --recursive --require @babel/register
 ```  
+
+
+## Using Environment variable
+```
+"scripts": {
+    "test": "NODE_ENV=test npx mocha \"src/**/*.test.js\" --recursive --require @babel/register --file src/mocha-setup.js"
+  },
+```
